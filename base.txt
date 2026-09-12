@@ -1,0 +1,79 @@
+Belajar materi baru:
+
+PYTHON
+
+workflow:
+- kuasai dasar python
+- praktik
+- belajar OOP (Object-Oriented Programming)
+- kenalan dengan library data
+- visualisasi data dengan Matplotlib/Seaborn
+- masuk ke Machine Learning dengan Scikit-learn
+
+Dasar python
+notes:
+Python adalah bahasa pemrograman interpretatif multiguna
+Comment di python menggunakan "#" dan akhir nya di kasih """
+Mencetak: print()
+ex: print("hello world")
+Python bersifat case sensitif, ini artinya huruf besar dan huruf  kecil memiliki perbedaan.
+Tipe data adalah suatu media atau memori pada komputer yang digunakan untuk menampung informasi.
+Tipe data yang ada di python:
+Boolean (bool)
+(Buat menyatakan kondisi benar/salah. Sering dipakai di percabangan (if) atau perulangan.)
+ex:
+sudah_bayar = True
+stok_habis = False
+if sudah_bayar :
+print("Pesanan diproses")
+
+String (str)
+(Buat nyimpen teks — nama, kalimat, alamat, dll.)
+ex:
+nama = "Farras"
+pesan = 'Selamat Datang'print(nama + " berkata: " = pesan)
+
+Integer (int)
+(Menyatakan bilangan bulat (umur, jumlah barang, dll))
+ex:
+umur = 20
+jumlah_barang = 15
+total = umur + jumlah_barang
+print(total) # 35
+
+
+(Menyatakan bilangan desimal (hsarga, tinggi badan, nilai rata-rata))
+ex:
+harga =  15000.50
+tinggi_badan = 170.5
+print(harga * 2)   # 30001.0
+Hexadecimal
+(Menyatakan bilangan dalam format heksa (bilangan berbasis 16) >> (warna))
+ex:
+warna = 0x1a2b3c
+print(warna)
+print(hex(255))
+Complex
+(Menyatakan pasangan angka real dan imajiner >> perhitungan matematika/teknik tertentu)
+ex:
+angka = 1 + 5j
+print(angka.real)      # 1.0
+print(angka.imag)    # 5.0
+List
+(Nyimpen banyak data sekaligus dalam satu variabel, urutan terjaga, dan bisa diubah (tambah/hapus/edit item) >> daftar belanja,dll)
+ex:
+buah = ["apel", "jeruk, "mangga"]
+buah.append("pisang")     # nambah item
+buah[0] = "melon              # ubah item pertama
+Tuple
+(Mirip list, tapi isinya gak bisa diubah setelah dibuat.)
+ex:
+Set
+(Kumpulan data unik yang tidak berurutan dan tidak bisa memiliki duplikat)
+ex: {'apel', 'jeruk'}
+Dictionary
+(Nyimpen data berpasangan key-value (kunci dan nilai), cocok buat data yang punya "label", misal data profil seseorang.)
+ex:
+data_siswa = {"nama": "Farras", "id": 2, "kelas": "XII IPA"}
+print(data_siswa["nama"])   # Farrasdata_siswa["umur"] = 17     # nambah key baru
+print(data_siswa)
