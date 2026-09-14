@@ -1,0 +1,125 @@
+CATATAN BELAJAR PYTHON
+=======================
+
+ROADMAP BELAJAR
+----------------
+1. Kuasai dasar Python
+2. Praktik
+3. Belajar OOP (Object-Oriented Programming)
+4. Kenalan dengan library data
+5. Visualisasi data dengan Matplotlib/Seaborn
+6. Masuk ke Machine Learning dengan Scikit-learn
+
+
+DASAR PYTHON
+============
+
+Python adalah bahasa pemrograman interpretatif multiguna.
+
+Comment:
+- Satu baris     : pakai #
+- Banyak baris   : diapit dengan """ di awal dan di akhir
+
+Mencetak output ke layar: print()
+    Contoh: print("Hello World")
+
+Python bersifat case sensitive — huruf besar dan huruf kecil
+dianggap berbeda (nama =/= Nama =/= NAMA).
+
+Tipe data adalah media/memori pada komputer yang digunakan
+untuk menampung informasi.
+
+
+TIPE DATA DI PYTHON
+--------------------
+
+1) Boolean (bool)
+   Menyatakan kondisi benar/salah. Sering dipakai di
+   percabangan (if) atau perulangan.
+
+   sudah_bayar = True
+   stok_habis = False
+
+   if sudah_bayar:
+       print("Pesanan diproses")
+
+2) String (str)
+   Menyimpan teks — nama, kalimat, alamat, dll.
+
+   nama = "Farras"
+   pesan = "Selamat Datang"
+   print(nama + " berkata: " + pesan)
+
+3) Integer (int)
+   Menyatakan bilangan bulat (umur, jumlah barang, dll).
+
+   umur = 20
+   jumlah_barang = 15
+   total = umur + jumlah_barang
+   print(total)  # 35
+
+4) Float
+   Menyatakan bilangan desimal (harga, tinggi badan, nilai rata-rata).
+
+   harga = 15000.50
+   tinggi_badan = 170.5
+   print(harga * 2)  # 30001.0
+
+5) Hexadecimal
+   Menyatakan bilangan dalam format heksa (basis 16),
+   sering dipakai untuk kode warna.
+
+   warna = 0x1a2b3c
+   print(warna)
+   print(hex(255))
+
+6) Complex
+   Menyatakan pasangan angka real dan imajiner, dipakai untuk
+   perhitungan matematika/teknik tertentu.
+
+   angka = 1 + 5j
+   print(angka.real)  # 1.0
+   print(angka.imag)  # 5.0
+
+7) List
+   Menyimpan banyak data sekaligus dalam satu variabel. Urutan
+   terjaga dan isinya bisa diubah (tambah/hapus/edit item).
+   Cocok untuk daftar belanja, dll.
+
+   buah = ["apel", "jeruk", "mangga"]
+   buah.append("pisang")   # nambah item baru
+   buah[0] = "melon"       # ubah item pertama
+
+8) Tuple
+   Mirip list, tapi isinya TIDAK bisa diubah setelah dibuat
+   (immutable).
+
+   koordinat = (10, 20)
+   hari = ("Senin", "Selasa", "Rabu")
+
+9) Set
+   Kumpulan data unik, tidak berurutan, dan tidak bisa memiliki
+   duplikat.
+
+   buah_unik = {"apel", "jeruk", "apel"}
+   print(buah_unik)  # {'apel', 'jeruk'} -> duplikat otomatis hilang
+
+10) Dictionary
+    Menyimpan data berpasangan key-value (kunci dan nilai).
+    Cocok untuk data yang punya "label", misal data profil
+    seseorang.
+
+    data_siswa = {"nama": "Farras", "id": 2, "kelas": "XII IPA"}
+    print(data_siswa["nama"])   # Farras
+
+    data_siswa["umur"] = 17     # nambah key baru
+    print(data_siswa)
+
+
+CATATAN TAMBAHAN
+-----------------
+- List, Set, dan Dictionary sifatnya "mutable" (bisa diubah
+  setelah dibuat).
+- Tuple sifatnya "immutable" (tidak bisa diubah setelah dibuat).
+- Set tidak punya urutan tetap dan tidak bisa diakses pakai index
+  seperti list/tuple.
